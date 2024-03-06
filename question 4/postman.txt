@@ -1,0 +1,47 @@
+GET Request for orangeHRM
+
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Response time is less than 500ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(500);
+});
+
+
+1st test case is a simple test to see if the url is accessed or not
+(status 200 means success)
+
+2nd test case is to check the response time of the website if it takes less than 500 milli seconds to access
+
+*********************************************
+
+
+
+
+POST Request
+Signin
+
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Response has a JSON body", function () {
+    pm.response.to.be.json;
+});
+
+pm.test("Response has a token property", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.token).to.be.a('string');
+});
+
+pm.test("Response has a data property", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.data).to.be.a('object');
+
+
+In Body Section of Request
+Username and Password values were passed in x-www-form-urlencoded
+method
+
+**********************************************
