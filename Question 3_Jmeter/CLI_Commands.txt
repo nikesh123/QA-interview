@@ -1,4 +1,10 @@
 Note: I  HAVE GENERATED TWO HTML REPORTS AND CSV FILES FOR 2 CASES
+      And I HAVE PRINTED IN PDF FORMAT FOR BOTH HTML REPORTS NAMED html_report_1 and html_report_2
+      Html_report_1 is the case 1 where each thread has 1 second of delay in sending request (ramp up : 1000 seconds)
+      Html_report_2 is the case 2 where ramp up period = 1 second, hence all 1k threads (users) access the site in overall 1 second
+      
+     (P.S: I ran two cases load test because i was not clear about exact condition given in question, so i executed both possible cases)      
+
 CASE 1: RAMP UP PERIOD : 1000 SECONDS (THAT IS DELAY OF 1 SECOND BETWEEN EACH THREAD IN A THREAD GROUP OF 1000)
 CASE 2: RAMP UP PERIOD : 1 SECOND (1000 THREADS ACCESSING THE SITE IN 1 SECOND)
 
