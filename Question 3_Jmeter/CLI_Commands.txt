@@ -1,0 +1,47 @@
+Note: I  HAVE GENERATED TWO HTML REPORTS AND CSV FILES FOR 2 CASES
+CASE 1: RAMP UP PERIOD : 1000 SECONDS (THAT IS DELAY OF 1 SECOND BETWEEN EACH THREAD IN A THREAD GROUP OF 1000)
+CASE 2: RAMP UP PERIOD : 1 SECOND (1000 THREADS ACCESSING THE SITE IN 1 SECOND)
+
+
+STEPS INVOLVED IN GUI MODE:
+sTEP 1: I CREATED A NEW TEST PLAN
+STEP 2: I ADDED A THREAD GROUP WHERE I PASSED 1000 THREADS IN THE THREADS SECTION
+STEP 3: I CONFIGURED THE RAMP UP PERIOD
+
+STEP 4: I ADDED A SAMPLER - HTTP REQUEST, TO ACCESS THE ORANGEHRM WEBSITE
+STEP 5: I ADDED THE URL TO BE ACCESSED, (HOME PAGE) AND FOLLOWING WEB PAGES PATH IN PATH SECTION
+STEP 6: ADDED LISTENERS TO VIEW RESULTS:
+          VIEW RESULTS TREE and
+          SUMMARY REPORT
+       With view results tree we can see each and every request thats sent to the server
+       and whether its passed or not immediately (Green : Passed, Red: Failed)
+
+STEP 7: SAVED THE TEST
+
+AFTER THE TEST WAS DESIGNED AND SAVED, I RAN THE BELOW CODE TO RUN THE TEST, GENERATE CSV AND THEN HTML REPORT OF THE TEST
+
+
+THE COMMAND TO GENERATE REPORT IS AS BELOW:
+
+
+C:\Users\Nikesh\Desktop\apache-jmeter-5.6.3\bin>jmeter -n -t OrangeHRM.jmx -l /Users/Nikesh/Desktop/Jmeter/OrangeHRM_2.csv -e -o /Users/Nikesh/Desktop/Jmeter/htmlreport/
+
+
+I have used the above command in CLI to generate a report
+(Paths are Local and Varies with the machine)
+
+In the above command,
+the following are the modes used
+-n: Non-GUI mode
+-t: Path to the JMX file (Test Plan)
+-l: Path to save the results file
+-e: Generate the dashboard report
+-o: Output directory for the HTML report
+
+
+Method 2:
+We can Also Generate HTML Report in our own local machine by using the CSV file
+If the HTML Report Thats Generated in my local machine does not load in your browser, 
+then I will have generated CSV file for the Load Test also shared, using which you can generate HTML Report File
+
+Thank You

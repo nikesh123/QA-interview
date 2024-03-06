@@ -1,0 +1,34 @@
+{
+  "HTTP Request to orangeHRM for Load Testing" : {
+    "transaction" : "HTTP Request to orangeHRM for Load Testing",
+    "sampleCount" : 1000,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 964.4900000000002,
+    "medianResTime" : 955.0,
+    "minResTime" : 837.0,
+    "maxResTime" : 2749.0,
+    "pct1ResTime" : 1022.0,
+    "pct2ResTime" : 1059.0,
+    "pct3ResTime" : 1177.9,
+    "throughput" : 1.000763582613534,
+    "receivedKBytesPerSec" : 4.5193036974711704,
+    "sentKBytesPerSec" : 0.15832392615565677
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 1000,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 964.4900000000002,
+    "medianResTime" : 955.0,
+    "minResTime" : 837.0,
+    "maxResTime" : 2749.0,
+    "pct1ResTime" : 1022.0,
+    "pct2ResTime" : 1059.0,
+    "pct3ResTime" : 1177.9,
+    "throughput" : 1.000763582613534,
+    "receivedKBytesPerSec" : 4.5193036974711704,
+    "sentKBytesPerSec" : 0.15832392615565677
+  }
+}
