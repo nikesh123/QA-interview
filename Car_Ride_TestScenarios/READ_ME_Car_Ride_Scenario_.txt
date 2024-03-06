@@ -13,7 +13,7 @@ Because these steps are same for every scenario and its
 not good practice to repeat steps
 
 I have used | Examples | to pass multiple variables
-to a parametre wherever required
+wherever required
 
 I might have missed few more scenarios but i tried to cover most common possible ones
 in a proper format
